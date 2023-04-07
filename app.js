@@ -27,7 +27,9 @@ let list = document.querySelector("#book-list ul");
 
 // console.log(list);
 list.addEventListener ('click' , function(e){
+    if(e.target.className == 'delete'){
     let liEvent = e.target.parentElement;
     // console.log(liEvent);
     list.removeChild(liEvent)
-})
+    }
+});
