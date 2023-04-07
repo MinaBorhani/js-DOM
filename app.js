@@ -56,8 +56,10 @@ addForme.addEventListener("submit" , function(e){
 
 
     // add classes
-    bookName.classList.add("name");
-    deleteBtn.classList.add("delete");
+    // bookName.classList.add("name");
+    // deleteBtn.classList.add("delete");
+    bookName.setAttribute("class" , "name");
+    deleteBtn.setAttribute("class" , "delete");
 
     // append DOM
     li.appendChild(bookName);
