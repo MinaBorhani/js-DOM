@@ -33,3 +33,15 @@ list.addEventListener ('click' , function(e){
     list.removeChild(liEvent)
     }
 });
+
+
+
+// add books
+const addForme = document.forms["add-book"];
+
+// console.log(addForme);
+addForme.addEventListener("submit" , function(e){
+    e.preventDefault();
+    let value = addForme.querySelector("input[type='text']").value;
+    console.log(value);
+})
